@@ -65,14 +65,33 @@ namespace FindCouple.DesktopClient.Windows
             image.Width = PixelsCellSize;
             image.Height = PixelsCellSize;
             image.Source = bitmapImage;
-            Canvas.SetLeft(image, PixelsCellSize * (x));
-            Canvas.SetTop(image, PixelsCellSize * (y));
+            Canvas.SetLeft(image, PixelsCellSize * x);
+            Canvas.SetTop(image, PixelsCellSize * y);
             _field.Children.Add(image);
         }
 
         public string GetUnitImage(Unit unit)
         {
-            return @"/FindCouple.DesktopClient;component/images/empty.jpg";
+            switch (unit.UnitImageType)
+            {
+                case UnitImageType.T1: return @"/FindCouple.DesktopClient;component/images/luntik.jpg";
+                case UnitImageType.T2: return @"/FindCouple.DesktopClient;component/images/kuzya.jpg";
+                case UnitImageType.T3: return @"/FindCouple.DesktopClient;component/images/mila.jpg";
+                case UnitImageType.T4: return @"/FindCouple.DesktopClient;component/images/pchelenok.jpg";
+                case UnitImageType.T5: return @"/FindCouple.DesktopClient;component/images/vupsenpupsen.jpg";
+                case UnitImageType.T6: return @"/FindCouple.DesktopClient;component/images/babakapa.jpg";
+                case UnitImageType.T7: return @"/FindCouple.DesktopClient;component/images/dedsher.jpg";
+                case UnitImageType.T8: return @"/FindCouple.DesktopClient;component/images/shnuk.jpg";
+                default: return @"/FindCouple.DesktopClient;component/images/empty.jpg";
+            }
+        }
+
+        public void _click(object sender, MouseButtonEventArgs e)
+        {
+            var x = (int)(e.GetPosition(_field).X / PixelsCellSize);
+            var y = (int)(e.GetPosition(_field).Y / PixelsCellSize);
+            Game.OpenCell(x, y);
+            DrawField();
         }
     }
 }

@@ -28,8 +28,45 @@ namespace FindCouple.DesktopClient
 
         private void _startGame(object sender, RoutedEventArgs e)
         {
-            var window = new GameWindow(6);
+            var window = new GameWindow(GetFieldSize());
             window.Show();
+        }
+        
+        private int GetFieldSize()
+        {
+            if (_4.IsChecked == true)
+            {
+                return 4;
+            }
+            if (_6.IsChecked == true)
+            {
+                return 6;
+            }
+            if (_8.IsChecked == true)
+            {
+                return 8;
+            }
+            if (_10.IsChecked == true)
+            {
+                return 10;
+            }
+            if (_12.IsChecked == true)
+            {
+                return 12;
+            }
+            if (_14.IsChecked == true)
+            {
+                return 14;
+            }
+            if (_16.IsChecked == true)
+            {
+                return 16;
+            }
+            if (_18.IsChecked == true)
+            {
+                return 18;
+            }
+            return 4;
         }
     }
 }

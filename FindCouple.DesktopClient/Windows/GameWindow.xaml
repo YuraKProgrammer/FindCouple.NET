@@ -13,10 +13,10 @@
             <ColumnDefinition Width="Auto"/>
         </Grid.ColumnDefinitions>
         <StackPanel Grid.Column="0">
-            <TextBlock x:Name="_score"/>
+            <TextBlock x:Name="_score" Text="Счёт: 0" FontSize="20"/>
         </StackPanel>
         <StackPanel Grid.Column="1">
-            <Canvas x:Name="_field"/>
+            <Canvas x:Name="_field" MouseLeftButtonDown="_click"/>
         </StackPanel>
         <StackPanel Grid.Column="2">
             

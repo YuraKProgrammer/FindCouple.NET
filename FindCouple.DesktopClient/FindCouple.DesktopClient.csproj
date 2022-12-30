@@ -8,9 +8,17 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="images\babakapa.jpg" />
     <None Remove="images\closed.jpg" />
+    <None Remove="images\dedsher.jpg" />
     <None Remove="images\empty.jpg" />
     <None Remove="images\icon.ico" />
+    <None Remove="images\kuzya.jpg" />
+    <None Remove="images\luntik.jpg" />
+    <None Remove="images\mila.jpg" />
+    <None Remove="images\pchelenok.jpg" />
+    <None Remove="images\shnuk.jpg" />
+    <None Remove="images\vupsenpupsen.jpg" />
   </ItemGroup>
 
   <ItemGroup>
@@ -18,9 +26,17 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="images\babakapa.jpg" />
     <Resource Include="images\closed.jpg" />
+    <Resource Include="images\dedsher.jpg" />
     <Resource Include="images\empty.jpg" />
     <Resource Include="images\icon.ico" />
+    <Resource Include="images\kuzya.jpg" />
+    <Resource Include="images\luntik.jpg" />
+    <Resource Include="images\mila.jpg" />
+    <Resource Include="images\pchelenok.jpg" />
+    <Resource Include="images\shnuk.jpg" />
+    <Resource Include="images\vupsenpupsen.jpg" />
   </ItemGroup>
 
 </Project>

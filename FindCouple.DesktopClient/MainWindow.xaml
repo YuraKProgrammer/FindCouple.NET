@@ -30,16 +30,20 @@
             <Button Content="Выйти"/>
         </StackPanel>
         <StackPanel Grid.Row="1" Grid.Column="0">
-            <RadioButton Content="4x4" IsChecked="True" GroupName="group"/>
+            <RadioButton Content="4x4" IsChecked="True" GroupName="group" x:Name="_4"/>
+            <RadioButton Content="6x6" GroupName="group" x:Name="_6"/>
         </StackPanel>
         <StackPanel Grid.Row="1" Grid.Column="1">
-            <RadioButton Content="6x6" GroupName="group"/>
+            <RadioButton Content="8x8" GroupName="group" x:Name="_8"/>
+            <RadioButton Content="10x10" GroupName="group" x:Name="_10"/>
         </StackPanel>
         <StackPanel Grid.Row="1" Grid.Column="2">
-            <RadioButton Content="8x8" GroupName="group"/>
+            <RadioButton Content="12x12" GroupName="group" x:Name="_12"/>
+            <RadioButton Content="14x14" GroupName="group" x:Name="_14"/>
         </StackPanel>
         <StackPanel Grid.Row="1" Grid.Column="3">
-            <RadioButton Content="10x10" GroupName="group"/>
+            <RadioButton Content="16x16" GroupName="group" x:Name="_16"/>
+            <RadioButton Content="18x18" GroupName="group" x:Name="_18"/>
         </StackPanel>
     </Grid>
 </Window>
