@@ -10,9 +10,12 @@ namespace FindCouple.Models
     {
         public int Size;
 
+        public Cell[,] cells { get; set; }
+
         public GameField(int size)
         {
             Size = size;
+            cells = new Cell[size, size];
         }
     }
 }

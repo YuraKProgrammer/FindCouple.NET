@@ -28,7 +28,7 @@ namespace FindCouple.DesktopClient
 
         private void _startGame(object sender, RoutedEventArgs e)
         {
-            var window = new GameWindow(4);
+            var window = new GameWindow(6);
             window.Show();
         }
     }

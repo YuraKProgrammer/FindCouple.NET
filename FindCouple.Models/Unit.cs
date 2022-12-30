@@ -8,5 +8,11 @@ namespace FindCouple.Models
 {
     public class Unit
     {
+        public UnitImageType UnitImageType { get; set; }
+
+        public Unit(UnitImageType unitImageType)
+        {
+            UnitImageType = unitImageType;
+        }
     }
 }

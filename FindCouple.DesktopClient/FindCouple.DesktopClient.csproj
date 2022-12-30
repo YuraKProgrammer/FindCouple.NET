@@ -8,6 +8,8 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="images\closed.jpg" />
+    <None Remove="images\empty.jpg" />
     <None Remove="images\icon.ico" />
   </ItemGroup>
 
@@ -16,6 +18,8 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="images\closed.jpg" />
+    <Resource Include="images\empty.jpg" />
     <Resource Include="images\icon.ico" />
   </ItemGroup>
 
