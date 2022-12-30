@@ -91,7 +91,9 @@ namespace FindCouple.DesktopClient.Windows
             var x = (int)(e.GetPosition(_field).X / PixelsCellSize);
             var y = (int)(e.GetPosition(_field).Y / PixelsCellSize);
             Game.OpenCell(x, y);
+            Game.CountOfMoves++;
             DrawField();
+            _moves.Text = "Количество ходов: " + (int)Game.CountOfMoves;
         }
     }
 }

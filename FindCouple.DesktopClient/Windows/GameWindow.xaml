@@ -13,7 +13,7 @@
             <ColumnDefinition Width="Auto"/>
         </Grid.ColumnDefinitions>
         <StackPanel Grid.Column="0">
-            <TextBlock x:Name="_score" Text="Счёт: 0" FontSize="20"/>
+            <TextBlock x:Name="_moves" Text="Количество ходов: 0" FontSize="20"/>
         </StackPanel>
         <StackPanel Grid.Column="1">
             <Canvas x:Name="_field" MouseLeftButtonDown="_click"/>

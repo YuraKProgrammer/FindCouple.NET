@@ -9,10 +9,12 @@ namespace FindCouple.Models
         public bool IsOneCellOpened = false;
         public int openedX = -1;
         public int openedY = -1;
+        public int CountOfMoves { get; set; }
 
         public Game(int size)
         {
             Field = fieldGenerator.Generate(size);
+            CountOfMoves = 0;
         }
 
         public void OpenCell(int x, int y)

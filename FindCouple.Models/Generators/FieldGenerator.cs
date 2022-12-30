@@ -15,13 +15,14 @@ namespace FindCouple.Models.Generators
             Cell[,] cells = new Cell[size, size];
             while (CheckHoles(cells,size))
             {
-                Cell cell1 = new Cell(unitGenerator.GenerateRandom());
-                Cell cell2 = new Cell(cell1.Unit);
+                Unit unit = unitGenerator.GenerateRandom();
+                Cell cell1 = new Cell(unit);
+                Cell cell2 = new Cell(unit);
                 int x1 = random.Next(size);
                 int y1 = random.Next(size);
+                cells[x1, y1] = cell1;
                 int x2 = random.Next(size);
                 int y2 = random.Next(size);
-                cells[x1, y1] = cell1;
                 while (cells[x2,y2]!=null)
                 {
                     x2 = random.Next(size);
