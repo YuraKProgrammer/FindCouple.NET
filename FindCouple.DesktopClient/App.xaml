@@ -1,7 +1,7 @@
-﻿<Application x:Class="FindCouple.App"
+﻿<Application x:Class="FindCouple.DesktopClient.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:local="clr-namespace:FindCouple"
+             xmlns:local="clr-namespace:FindCouple.DesktopClient"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
          
