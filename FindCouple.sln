@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32519.379
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FindCouple.DesktopClient", "FindCouple\FindCouple.DesktopClient.csproj", "{5CF5BF0D-9F10-4FDA-9C38-B3E500A77DA8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FindCouple.Models", "FindCouple.Models\FindCouple.Models.csproj", "{28D98174-E0D3-4CF6-A9F1-7DD74A61F677}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5CF5BF0D-9F10-4FDA-9C38-B3E500A77DA8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5CF5BF0D-9F10-4FDA-9C38-B3E500A77DA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5CF5BF0D-9F10-4FDA-9C38-B3E500A77DA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5CF5BF0D-9F10-4FDA-9C38-B3E500A77DA8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28D98174-E0D3-4CF6-A9F1-7DD74A61F677}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28D98174-E0D3-4CF6-A9F1-7DD74A61F677}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28D98174-E0D3-4CF6-A9F1-7DD74A61F677}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28D98174-E0D3-4CF6-A9F1-7DD74A61F677}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B1D12B68-5EC4-4216-B28B-10354AD45726}
+	EndGlobalSection
+EndGlobal
