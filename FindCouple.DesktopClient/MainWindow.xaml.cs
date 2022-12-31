@@ -68,5 +68,16 @@ namespace FindCouple.DesktopClient
             }
             return 4;
         }
+
+        private void _exit(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
+
+        public void _about(object sender, EventArgs e)
+        {
+            var window = new AboutWindow();
+            window.Show();
+        }
     }
 }

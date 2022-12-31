@@ -23,13 +23,14 @@ namespace FindCouple.DesktopClient.Windows
         public Game Game;
         public int PixelsCellSize;
         public int FieldSize;
+        private const int scoreFactor = 10;
         public GameWindow(int fieldSize)
         {
             InitializeComponent();
             Game = new Game(fieldSize);
             FieldSize = fieldSize;
             PixelsCellSize = (int)(800 / fieldSize);
-            DrawField();
+            Update();
         }
 
         public void DrawField()
@@ -92,8 +93,33 @@ namespace FindCouple.DesktopClient.Windows
             var y = (int)(e.GetPosition(_field).Y / PixelsCellSize);
             Game.OpenCell(x, y);
             Game.CountOfMoves++;
+            Update();
+        }
+
+        public void _openField(object sender, EventArgs e)
+        {
+            Game.OpenField();
+            Game.CountOfMoves = 0;
+            Update();
+        }
+
+        public void _exit(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        public void Update()
+        {
             DrawField();
             _moves.Text = "Количество ходов: " + (int)Game.CountOfMoves;
+            if (Game.CountOfMoves != 0)
+            {
+                _score.Text = "Cчёт: " + FieldSize * FieldSize * scoreFactor / Game.CountOfMoves;
+            }
+            else
+            {
+                _score.Text = "Cчёт: " + 0;
+            }
         }
     }
 }

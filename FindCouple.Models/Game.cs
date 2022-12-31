@@ -46,5 +46,17 @@ namespace FindCouple.Models
                 }
             }
         }
+
+        public void OpenField()
+        {
+            for (var x=0; x < Field.Size; x++)
+            {
+                for (var y=0; y<Field.Size; y++)
+                {
+                    Field.cells[x, y].IsOpen = false;
+                    Field.cells[x, y].IsSolved = true;
+                }
+            }
+        }
     }
 }

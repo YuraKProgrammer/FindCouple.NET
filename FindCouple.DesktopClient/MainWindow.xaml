@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FindCouple.DesktopClient"
         mc:Ignorable="d"
-        Title="Найди пару. Начало." Height="100" Width="500">
+        Title="Найди пару. Начало." Height="100" Width="500" Icon="/FindCouple.DesktopClient;component/images/icon.ico">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition/>
@@ -24,10 +24,10 @@
             <Button Content="Настройки"/>
         </StackPanel>
         <StackPanel Grid.Row="0" Grid.Column="2">
-            <Button Content="Об игре"/>
+            <Button Content="Об игре" Click="_about"/>
         </StackPanel>
         <StackPanel Grid.Row="0" Grid.Column="3">
-            <Button Content="Выйти"/>
+            <Button Content="Выйти" Click="_exit"/>
         </StackPanel>
         <StackPanel Grid.Row="1" Grid.Column="0">
             <RadioButton Content="4x4" IsChecked="True" GroupName="group" x:Name="_4"/>
