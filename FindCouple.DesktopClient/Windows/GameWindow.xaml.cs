@@ -120,6 +120,16 @@ namespace FindCouple.DesktopClient.Windows
             {
                 _score.Text = "Cчёт: " + 0;
             }
+            CheckWin();
+        }
+
+        public void CheckWin()
+        {
+            if (Game.CheckSolved() && Game.CountOfMoves!=0)
+            {
+                MessageBox.Show("Игра окончена!","Победа");
+                this.Close();
+            }
         }
     }
 }

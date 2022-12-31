@@ -58,5 +58,20 @@ namespace FindCouple.Models
                 }
             }
         }
+
+        public bool CheckSolved()
+        {
+            for (var x = 0; x < Field.Size; x++)
+            {
+                for (var y = 0; y < Field.Size; y++)
+                {
+                    if (!Field.cells[x, y].IsSolved)
+                    {
+                        return false;
+                    }
+                }
+            }
+            return true;
+        }
     }
 }

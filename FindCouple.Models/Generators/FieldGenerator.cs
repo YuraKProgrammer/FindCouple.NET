@@ -20,6 +20,11 @@ namespace FindCouple.Models.Generators
                 Cell cell2 = new Cell(unit);
                 int x1 = random.Next(size);
                 int y1 = random.Next(size);
+                while (cells[x1, y1] != null)
+                {
+                    x1 = random.Next(size);
+                    y1 = random.Next(size);
+                }
                 cells[x1, y1] = cell1;
                 int x2 = random.Next(size);
                 int y2 = random.Next(size);
