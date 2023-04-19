@@ -73,5 +73,21 @@ namespace FindCouple.Models
             }
             return true;
         }
+
+        public int GetCountOfSolved()
+        {
+            var k = 0;
+            for (var x = 0; x < Field.Size; x++)
+            {
+                for (var y = 0; y < Field.Size; y++)
+                {
+                    if (Field.cells[x, y].IsSolved)
+                    {
+                        k = k + 1;
+                    }
+                }
+            }
+            return k;
+        }
     }
 }

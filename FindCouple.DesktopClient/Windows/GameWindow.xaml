@@ -15,9 +15,10 @@
         <StackPanel Grid.Column="0">
             <TextBlock x:Name="_moves" Text="Количество ходов: 0" FontSize="20"/>
             <TextBlock x:Name="_score" Text="Счёт:" FontSize="20"/>
+            <TextBlock x:Name="_solved" Text="Решено" FontSize="20"/>
         </StackPanel>
         <StackPanel Grid.Column="1">
-            <Canvas x:Name="_field" MouseLeftButtonDown="_click"/>
+            <Canvas x:Name="_field" MouseLeftButtonDown="_click" Margin="10,0,0,10"/>
         </StackPanel>
         <StackPanel Grid.Column="2">
             <Button Content="Сдаюсь! Открыть поле!" FontSize="20" Click="_openField"/>

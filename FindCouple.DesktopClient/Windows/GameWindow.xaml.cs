@@ -120,6 +120,7 @@ namespace FindCouple.DesktopClient.Windows
             {
                 _score.Text = "Cчёт: " + 0;
             }
+            _solved.Text = "Решено "+Game.GetCountOfSolved().ToString() + " из " + Game.Field.Size * Game.Field.Size;
             CheckWin();
         }
 
